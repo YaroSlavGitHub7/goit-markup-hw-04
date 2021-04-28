@@ -47,7 +47,7 @@ img {
     list-style: none;
 }
 .container {
-  width: 1200px;  
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -159,7 +159,7 @@ header {
     url(../img/mainbackground.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
 }
 
 .dark-bg {
@@ -183,6 +183,23 @@ header {
 .title-invisible {
     display: none;
 }
+ .works-icons-item{
+    display: flex;
+    align-items: center;
+    height: 120px ;
+    width: 270px;
+    margin-left: -20px;
+    background: #F5F4FA; 
+ } 
+   
+.works-icons :not(:last-child) {
+    margin-right: 50px;
+}
+
+.works-icons-svg {
+    height: 70px;
+    width: auto;
+}
 .list-specific {
     display: inline-flex;
     justify-content: center;
@@ -200,8 +217,8 @@ header {
     color:var(--black-color);
     margin-bottom: 10px;
 }
-.specifications {
-    padding: 0px 30px 0px 0px ;
+*.specifications {
+    margin: 0px 30px 0px 0px ;
 }
 
 .section-works {
@@ -210,8 +227,8 @@ header {
 .list-works {
     display: inline-flex; 
 }
-.li-img {
-  padding-left: 30px;
+.li-img:not(:last-child) {
+  margin-right: 30px;
   }
 .card-set {
     display: flex;
@@ -267,7 +284,7 @@ footer {
     padding: 60px 0px; 
 }
 .footer-logo {
-    padding-bottom: 20px ;
+    margin-bottom: 20px ;
     color:var(--white-color) ;
 }
 .footer-text {
@@ -286,10 +303,7 @@ footer {
 .blue-background {
     background: var(--object-color) ;
 }
-.section-button { 
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
+
 .button {
     cursor: pointer;
     background: #F5F4FA ;
@@ -306,6 +320,8 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 94px;
+    padding-bottom: 50px;
  }
 .card-img {
     margin-bottom: -1px;
@@ -384,9 +400,9 @@ footer {
 }
 .footer-flex {
     display: flex;
-    align-items: top;
+    align-items: baseline;
     margin-right: auto;
-    }
+}
 .ftr-social {
     padding-top: 15px;
     padding-left: 70px;
@@ -397,7 +413,7 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--brand-color);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .ftr-icons-link {
     background-color:rgba(255, 255, 255, 0.1);
