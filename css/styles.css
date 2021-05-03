@@ -73,7 +73,7 @@ nav a.active {
     margin-right: 93px;
 }
 .page-header {
-    border: 1px solid rgba(236, 236, 236, 1)
+    border-bottom: 1px solid rgba(236, 236, 236, 1)
 }
 .page-header .container {
     display: flex;
@@ -118,6 +118,8 @@ header {
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .section-hero {
@@ -138,11 +140,12 @@ header {
 .link:hover,
 .link:focus {
   color: var(--object-color);
+  
 }
 
 .button:hover,
 .button:focus {
-  color: var(--white-color);
+  color: var(--white-color); 
   background: var(--object-color);
   box-shadow:   0px 2px 2px 0px rgba(0, 0, 0, 0.12),
                 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
@@ -170,6 +173,9 @@ header {
 
 .dark-bg {
     background: var(--dark-bg);
+    max-width: 1600px;
+    margin: auto;
+
    }
 
 .main-button {
@@ -189,12 +195,11 @@ header {
 .title-invisible {
     display: none;
 }
- .works-icons-item{
+ .works-icons-item {
     display: flex;
     align-items: center;
     height: 120px ;
     width: 270px;
-    /*margin-left: -20px;*/
     background: #F5F4FA; 
  } 
  .card-set-wrk {
@@ -211,14 +216,11 @@ header {
     height: 70px;
     width: auto;
 }
-/*.specific-flex {
-       
-      }*/
      
 .list-specific {
-    display: flex ; /*inline-  text-align: justify;*/
+    display: flex ; 
     justify-content: space-between;
-      overflow: auto;
+    overflow: auto;
     }
 
 .works-specifications {
@@ -238,9 +240,6 @@ header {
     flex: none;
     width: 270px;
     }
-/*.works1 {
-   width: 270px; не помогло установить ширину елемента
-}*/
 
 .section-works {
      padding-bottom: 94px;
@@ -278,6 +277,7 @@ header {
    }
 .team {
     background: #F5F4FA;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -338,6 +338,7 @@ footer {
     border-radius: 4px;
     margin-right: 8px;
     padding: 6px 22px;
+    outline-style: none ;
    }   
  .menu-button {
     display: flex;
@@ -400,8 +401,7 @@ footer {
     width: 20px;
     height: 20px;
     fill: rgba(175, 177, 184, 1);
-    /*var(--brand-color)*/;
-}
+   }
 .social-icons-link {
     display: flex;
     align-items: center;
@@ -418,10 +418,54 @@ footer {
 .social-icons-link:focus {
     background-color:  var(--object-color);
 }
-/*.social-icons-link:hover .social-icons-svg,
-.social-icons-link:focus .social-icons-svg {
-    fill: var(--brand-color);
-}*/
+
+.title-client {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+}
+.client-icons-item {
+    
+    width: 170px ;
+    height: 92px ;
+    border: 1px solid #AFB1B8 ;
+    box-sizing: border-box;
+    border-radius: 4px;
+ } 
+
+.client-icons :not(:last-child) {
+    margin-right: 30px;
+}
+.client-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    fill: rgba(175, 177, 184, 1);
+   
+     }
+/*.client-icons-svg {
+    box-shadow: none;
+    fill:  currentColor;
+}  */
+
+.card-set-client {
+    display: flex;
+    flex-wrap: wrap;
+    margin:-16px 0 0 -40px;
+}  
+.client-icons :hover,
+.client-icons :focus  {
+    fill:  var(--object-color);
+    border-color:var(--object-color) ;
+    box-shadow:   0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+                0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+                0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
 .footer-flex {
     display: flex;
     align-items: baseline;
@@ -446,3 +490,4 @@ footer {
 .ftr-icons-link {
     background-color:rgba(255, 255, 255, 0.1);
 }
+
