@@ -118,9 +118,7 @@ header {
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    max-width: 1600px;
-    margin: auto;
-}
+  }
 
 .section-hero {
     display: flex;
@@ -173,9 +171,6 @@ header {
 
 .dark-bg {
     background: var(--dark-bg);
-    max-width: 1600px;
-    margin: auto;
-
    }
 
 .main-button {
@@ -276,10 +271,7 @@ header {
     margin-bottom: 50px ; 
    }
 .team {
-    background: #F5F4FA;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    background: #F5F4FA; 
 }
 .team-member {
     font-size: 16px;
@@ -339,7 +331,18 @@ footer {
     margin-right: 8px;
     padding: 6px 22px;
     outline-style: none ;
-   }   
+    transition: color;
+    transition: background-color;
+    transition: box-shadow; 
+    transition: 250ms;
+    /*transition-duration: 250ms; почему-то работает только для рядом стоящего свойства*/
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   } 
+.button-all { /* кнопка синяя всегда*/
+    color: var(--white-color); 
+    background: var(--object-color);
+}
+
  .menu-button {
     display: flex;
     justify-content: center;
@@ -355,21 +358,17 @@ footer {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    padding: 20px 24px 4px 24px ;
-}
+    }
 .card-body-item {
     font-weight: 400 ;
     font-size: 16px ;
     line-height: 1.88 ;
     letter-spacing: 0.03em;
     color:var(--grey-color);
-    padding-top: 0px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
     }
 .card {
-    border: 1px solid #EEEEEE;
+        padding: 20px 24px;
+        border: 1px solid #EEEEEE;
 }
 .cards {
     display: flex;
@@ -385,8 +384,14 @@ footer {
     padding-top: 0 px;
     background: var(--brand-color);    
     width: 368px;
-    height: 404px;
+ }
+.list-card:hover, 
+.list-card:focus {
+  box-shadow:   0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+                0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+                0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
+
 .social-icons {
     display: inline-flex;
     padding-inline-start: 0px;
@@ -472,8 +477,7 @@ footer {
     margin-right: auto;
 }
 .ftr-social {
-    padding-top: 15px;
-    padding-left: 70px;
+    margin-left: 70px;
 }
 .social-icons-svg-ftr {
     width: 20px;
