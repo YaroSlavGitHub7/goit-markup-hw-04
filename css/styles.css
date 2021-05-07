@@ -41,8 +41,7 @@ img {
     height: auto;
 }
 nav a.active {
-    font-weight: bold;
-    font-weight: 700;
+    color:var(--object-color);
 }
 .list {
     margin: 0;
@@ -127,6 +126,7 @@ header {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
+   
 }
 .hero {
     padding: 200px 0px;
@@ -167,10 +167,13 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    max-width: 1600px;
 }
 
-.dark-bg {
+.main-dark-bg {
     background: var(--dark-bg);
+    max-width: 1600px;
+    margin: auto;
    }
 
 .main-button {
@@ -211,7 +214,7 @@ header {
     height: 70px;
     width: auto;
 }
-     
+
 .list-specific {
     display: flex ; 
     justify-content: space-between;
@@ -235,6 +238,19 @@ header {
     flex: none;
     width: 270px;
     }
+/*
+ .specific-card {
+     display: flex;
+ }   
+.specific-icons {
+    background-color:#AFB1B8 ;
+    width: 270px;
+    height: 120px;
+    margin-left: 30px;
+    align-items: center;
+
+}
+*/
 
 .section-works {
      padding-bottom: 94px;
@@ -318,7 +334,9 @@ footer {
 .blue-background {
     background: var(--object-color) ;
 }
-
+.li-button {
+    margin-right: 8px;
+}
 .button {
     cursor: pointer;
     background: #F5F4FA ;
@@ -328,7 +346,7 @@ footer {
     letter-spacing: 0.06em;
     border: 0px;
     border-radius: 4px;
-    margin-right: 8px;
+    
     padding: 6px 22px;
     outline-style: none ;
     transition: color;
@@ -347,8 +365,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
  }
 .card-img {
     margin-bottom: -1px;
@@ -370,13 +387,15 @@ footer {
         padding: 20px 24px;
         border: 1px solid #EEEEEE;
 }
+.card-portf {
+    box-sizing: border-box;
+}
 .cards {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin-left: -30px;
     margin-top: -30px;
-    padding-bottom: 94px;
 }
 .list-card {
     margin-left: 30px;
@@ -391,7 +410,13 @@ footer {
                 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
                 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
+/*
+тень при фокусе не появляется
+.card-portf:focus { 
+    box-shadow:   0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+                0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+                0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}*/
 .social-icons {
     display: inline-flex;
     padding-inline-start: 0px;
@@ -429,8 +454,8 @@ footer {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 50px;
-}
+    margin-bottom: 50px;
+   }
 .client-icons-item {
     
     width: 170px ;
@@ -460,8 +485,9 @@ footer {
 .card-set-client {
     display: flex;
     flex-wrap: wrap;
-    margin:-16px 0 0 -40px;
-}  
+    margin:-16px 0 0 0 ;
+}
+
 .client-icons :hover,
 .client-icons :focus  {
     fill:  var(--object-color);
@@ -471,6 +497,9 @@ footer {
                 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.ftr-dark-bg {
+    background: var(--dark-bg);
+}
 .footer-flex {
     display: flex;
     align-items: baseline;
