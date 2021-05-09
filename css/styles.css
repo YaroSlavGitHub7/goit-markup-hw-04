@@ -198,9 +198,10 @@ header {
     display: flex;
      width: 270px;
 }
-.card-li-item :not(:last-child) {
+.card-li-item:not(:last-child)  {
     margin-right: 30px;
 }
+
 .card-icon {
     display: flex;
     background: #F5F4FA;
